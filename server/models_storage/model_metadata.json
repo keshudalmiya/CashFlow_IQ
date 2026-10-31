@@ -1,0 +1,28 @@
+{
+  "model_version": "RandomForest-Demand-v1.0",
+  "algorithm": "RandomForestRegressor",
+  "n_estimators": 100,
+  "max_depth": 12,
+  "features": [
+    "hour",
+    "day_of_week",
+    "is_weekend",
+    "is_holiday",
+    "totalBalance",
+    "numberOutcomeTransaction",
+    "totalNumberTransaction",
+    "previous_demand",
+    "previous_transaction_count",
+    "rolling_mean_3"
+  ],
+  "feature_count": 10,
+  "evaluation": {
+    "mae": 6309.46,
+    "rmse": 8885.97,
+    "r2_score": 0.9017,
+    "accuracy_pct": 81.2,
+    "test_sample_size": 2886,
+    "evaluation_date": "31-Oct-2026 15:20 UTC"
+  },
+  "last_trained": "2026-10-31T15:20:15.173859+00:00"
+}
